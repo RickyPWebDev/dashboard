@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Tracking Dashboard</title>
+    
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <div class="dashboard">
+    <!-- Profile -->
+    <div class="profile">
+      <div class="profile-top">
+        <img src="images/image-jeremy.png" alt="Jeremy Robson" />
+        <p>Report for</p>
+        <h2>Jeremy Robson</h2>
+      </div>
+      <div class="profile-nav">
+        <ul>
+          <li data-period="daily" class="active"  id="daily-btn">Daily</li>
+          <li data-period="weekly" class="active" id="weekly-btn">Weekly</li>
+          <li data-period="monthly" class="active" id="monthly-btn">Monthly</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cards (will be dynamically filled later if desired) -->
+    <div class="card work" data-title="Work">
+      <img class="top-image" src="images/icon-work.svg">
+      <div class="card-content">
+
+        <div class="dots-heading">
+          <h3>Work</h3>
+          <img class="dots" src="images/icon-ellipsis.svg">
+        </div>
+
+        <h1><span class="current">32</span>hrs</h1>
+        <p>Last Week - <span class="previous">36</span>hrs</p>
+      </div>
+    </div>
+
+    <div class="card play" data-title="Play">
+      <img class="top-image" src="images/icon-play.svg">
+      <div class="card-content">
+
+        <div class="dots-heading">
+          <h3>Play</h3>
+          <img class="dots" src="images/icon-ellipsis.svg">
+        </div>
+
+        
+        <h1><span class="current">10</span>hrs</h1>
+        <p>Last Week - <span class="previous">8</span>hrs</p>
+      </div>
+    </div>
+
+    <div class="card study" data-title="Study">
+      <img class="top-image" src="images/icon-study.svg">
+      <div class="card-content">
+
+        <div class="dots-heading">
+          <h3>Study</h3>
+          <img class="dots" src="images/icon-ellipsis.svg">
+        </div>
+
+      
+        <h1><span class="current">4</span>hrs</h1>
+        <p>Last Week - <span class="previous">7</span>hrs</p>
+      </div>
+    </div>
+
+    <div class="card exercise" data-title="Exercise">
+      <img class="top-image" src="images/icon-exercise.svg">
+      <div class="card-content">
+
+        <div class="dots-heading">
+          <h3>Exercise</h3>
+          <img class="dots" src="images/icon-ellipsis.svg">
+        </div>
+
+        
+        <h1><span class="current">4</span>hrs</h1>
+        <p>Last Week - <span class="previous">5</span>hrs</p>
+      </div>
+    </div>
+
+    <div class="card social" data-title="Social">
+      <img class="top-image" src="images/icon-social.svg">
+      <div class="card-content">
+
+        <div class="dots-heading">
+          <h3>Social</h3>
+          <img class="dots" src="images/icon-ellipsis.svg">
+        </div>
+
+      
+        <h1><span class="current">5</span>hrs</h1>
+        <p>Last Week - <span class="previous">10</span>hrs</p>
+      </div>
+    </div>
+
+    <div class="card selfcare" data-title="Self Care">
+      <img class="top-image" src="images/icon-self-care.svg">
+      <div class="card-content">
+
+        <div class="dots-heading">
+          <h3>Self Care</h3>
+          <img class="dots" src="images/icon-ellipsis.svg">
+        </div>
+
+        <h1><span class="current">2</span>hrs</h1>
+        <p>Last Week - <span class="previous">2</span>hrs</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/scripts/script.js"></script>
+</body>
+</html>
